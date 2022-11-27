@@ -24,3 +24,5 @@ Admin Use Cases
 - Remove vaccination centres
 
 This application was mainly built on sqlite database with flask as a Back-end
+
+App Link: https://adi2710-covid.herokuapp.com/
