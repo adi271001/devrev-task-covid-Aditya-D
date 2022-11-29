@@ -33,31 +33,6 @@ class track(db.Model):
 	def __repr__(self):
 		return f"Total : {self.Total}"
 
-# @app.route('/update')
-# def update():
-# 	start=track.query.all()
-# 	for data in start:
-# 		start_date=datetime.date(data.current_date)
-# 	if(today.date()>start_date):
-# 		day=today-start_date
-# 		day=day.days
-# 		start_date+=timedelta(days=day)
-# 		data.current_date=start_date
-# 		db.session.commit()
-# 		return 'success'
-		
-
-
-
-# @app.route('/adddate')
-# def adddate():
-# 	current_date=datetime(2020,9,9)
-# 	Total=0
-# 	p=track(current_date=current_date,Total=Total)
-# 	db.session.add(p)
-# 	db.session.commit()
-# 	return('added')
-
 class Centre(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	Name = db.Column(db.String(50), unique=False, nullable=False)
@@ -107,20 +82,6 @@ class Admin(db.Model):
 	# will look like
 	def __repr__(self):
 		return f"Name : {self.first_name}, Age: {self.age}"
-
-# @app.route('/addadmin')
-# def add():
-# 	p=Admin(first_name='Sampath',last_name='kumar',age=21,role='Senior Doctor',email='bangalesampathkumarrao@gmail.com',pas='bhavana')
-# 	db.session.add(p)
-# 	db.session.commit()
-# 	return redirect('/')
-
-# @app.route('/adduser')
-# def add():
-# 	p=User(first_name='Sampath',last_name='kumar',age=21,gender='Male',email='bangalesampathkumarrao@gmail.com',pas='bhavana')
-# 	db.session.add(p)
-# 	db.session.commit()
-# 	return redirect('/')
 
 #home
 @app.route('/')
@@ -324,11 +285,6 @@ def VC():
 	except:
 		return render_template("Add_VC.html",addresult="Centre ID was already created")
 
-
-# @app.route('/Remove_VC',methods=['POST'])
-# def Remove_VC():
-	
-# 	return render_template('rem.html')
 
 @app.route('/RVC')
 def RVC():
