@@ -27,11 +27,11 @@ This application was mainly built on sqlite database with flask as a Back-end
 
 App Link: https://adi2710-covid.herokuapp.com/
 
-Credentials:
-Admin:
+**Credentials:**
+**Admin:**
 Username: 1rn19is011.adityad@gmail.com
 Pass: Adi2710#
 
-User:
+**User:**
 Username: ibetanibex@gmail.com
 Pass: Adi2710#
